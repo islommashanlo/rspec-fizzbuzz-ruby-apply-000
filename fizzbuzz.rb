@@ -5,9 +5,9 @@ def fizzbuzz(number)
     "Fizz"
   elsif number % 5 && !number / 3
     "Buzz"
-  elsif number % 5 && number % 3
+  elsif number / 5 && number / 3
     "FizzBuzz"
-  else
+  else !(number / 3 || number / 5)
     puts "#{number}"
   end
 end

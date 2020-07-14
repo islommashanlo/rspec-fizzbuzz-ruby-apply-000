@@ -3,11 +3,12 @@
 def fizzbuzz(number)
   if number % 3
     "Fizz"
-  elsif number % 5
-    "Buzz"
-  elsif number % 5 && number % 3
-    "FizzBuzz"
-  else
-    puts "#{number}"
   end
+  if number % 5
+    "Buzz"
+  end
+  if number % 5 && number % 3
+    "FizzBuzz"
+  end
+    puts "#{number}"
 end
